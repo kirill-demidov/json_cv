@@ -36,6 +36,7 @@
         "position": "Data Engineer Team Lead",
         "url": "https://arpeely.com",
         "startDate": "2022-07-01",
+        "endDate": "2024-07-01",
         "summary": "Leading the data engineering team, building scalable data infrastructure, and developing BI solutions using Google Cloud, BigQuery, and Dataform.",
         "highlights": [
           "Refactored ELT pipelines from custom Python to scalable Dataform solution.",
@@ -60,7 +61,78 @@
           "Implemented data governance and data quality monitoring using SelectStar and SodaSQL.",
           "Designed and built analytics and operational reports on Looker."
         ]
-      }
+      },
+      
+        {
+          "name": "Alterosmart Solutions",
+          "location": "Tel Aviv, Israel",
+          "description": "Big Data solutions provider specializing in IIoT and analytics.",
+          "position": "Big Data Team Lead",
+          "url": "https://www.alterosmart.com",
+          "startDate": "2019-12-01",
+          "endDate": "2021-07-01",
+          "summary": "Led the Big Data team, designing and implementing data pipelines, data warehouses, and analytics solutions for industrial IoT systems.",
+          "highlights": [
+            "Analyzed business requirements, designed, and implemented Big Data modules in PDC systems.",
+            "Developed and optimized ETL/ELT processes for IIoT systems (PDC, BMS) using Apache NiFi, Data Build Tool, and Spark.",
+            "Designed and implemented an operational Data Warehouse for PDC application data using PostgreSQL.",
+            "Built a Data Mart module for Atlassian Jira Software based on PostgreSQL and Cube.js.",
+            "Developed and visualized analytical reports for DF data processing."
+          ]
+        },
+        {
+          "name": "SafeCharge",
+          "location": "Tel Aviv, Israel",
+          "description": "A global payments technology company.",
+          "position": "Senior BI Developer",
+          "url": "https://www.safecharge.com",
+          "startDate": "2018-08-01",
+          "endDate": "2019-12-01",
+          "summary": "Designed and developed BI solutions, Data Marts, and reporting systems, while maintaining ETL processes for internal analytics.",
+          "highlights": [
+            "Analyzed business requirements and designed Data Marts for internal clients.",
+            "Maintained an ETL platform based on SSIS.",
+            "Developed a semantic layer using SSAS (OLAP Cube).",
+            "Designed and implemented a reporting system using SSRS and Power BI.",
+            "Migrated OLAP-based BI system to a Big Data environment using AWS Data Lake (S3), ELT pipelines with Apache NiFi and Spark (PySpark), and MemSQL as the semantic layer."
+          ]
+        },
+        {
+          "name": "Data Cube",
+          "location": "Tel Aviv, Israel",
+          "description": "BI and Big Data consultancy serving enterprise clients.",
+          "position": "BI Project Manager / BI & Big Data Engineer",
+          "url": "https://www.datacube.co.il",
+          "startDate": "2014-01-01",
+          "endDate": "2018-08-01",
+          "summary": "Managed BI projects and developed BI & Big Data solutions for various enterprises.",
+          "highlights": [
+            "Managed BI projects from conceptualization to full implementation.",
+            "Analyzed business requirements and developed project deliverables.",
+            "Maintained ETL platforms using SSIS, Python, and T-SQL.",
+            "Designed and implemented Data Marts and Data Warehouses for internal analytics systems.",
+            "Developed OLAP and Tabular Cube semantic layers.",
+            "Implemented reporting systems using Pyramid BI Office, SSRS, Necto Panorama, Power BI, and Business Objects.",
+            "Served major clients including BioCatch, Postal Bank of Israel, Bituach Yashir, Mimun Yashir, MKS Instruments, Taglit Birthright Israel, Panaya, Reuth Medical Rehabilitation Center, Medinol, LiderForex, and Amdocs."
+          ]
+        },
+        {
+          "name": "Company for Location and Restitution of Holocaust Victims' Assets",
+          "location": "Israel",
+          "description": "A governmental organization dedicated to identifying and restituting assets to Holocaust survivors and their heirs.",
+          "position": "Head of Data Management and Data Integration Department",
+          "url": "https://www.holocaust-assets.org.il",
+          "startDate": "2008-01-01",
+          "endDate": "2014-01-01",
+          "summary": "Led data management initiatives, developed data integration tools, and managed ETL and reporting systems.",
+          "highlights": [
+            "Developed knowledge management tools using MS SQL Server 2012.",
+            "Designed and managed ETL processes for data integration and reporting.",
+            "Created, managed, and supported a SharePoint-based database system.",
+            "Led a team in developing research projects, providing training, and knowledge sharing."
+          ]
+        }
+      
     ],
     "education": [
       {
