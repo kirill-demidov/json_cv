@@ -1,299 +1,219 @@
-<!doctype html>
-    <html lang="en" style="">
-      <head>
-        <meta charset="utf-8" />
-        
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kirill Demidov</title>
-    <meta name="description" content="Experienced Data Engineer with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions." />
-  
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
-        <style>
-          :root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}@media print{.duration{display:none}}
-        </style>
-        <script type="module">
-          const pluralize = (num, str) => `${num} ${num === 1 ? str : str.concat('s')}`
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+		body {
+			font-size: 62.5%;
+			font-family: Montserrat;
+			color: #333333;
+		}
+		.picture {
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+		a {
+			color: #333333;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #4e4e4e;
+		}
+		a:hover {
+			color: #4e4e4e;
+			text-decoration: underline;
+		}
+		
+		.header {
+			text-align:center;
+			font-size: 2em;
+			margin-top:1em;
+			margin-left:5%;
+			margin-right:5%;
+		}
+		h1 {
+			font-size:3em;
+			margin-bottom:0;
+		}
+		.profile {
+			font-family: Montserrat;
+			font-size: 1em;
+			margin:0;
+		}
 
-class TimeDuration extends HTMLElement {
-  connectedCallback() {
-    const [from, to] = this.querySelectorAll('time')
-    if (!from) return
+		.contact-header {
+			font-weight:bold;
+		}
+		.label {
+			margin-top: 0;
+			margin-bottom: 1em;
+		}
+		.fa {
+			font-size:2em;
+		}
+		.left {
+			font-size: 1em;
+		}
+		.main {
+			margin 0 auto;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-bottom: 50px;
+		}
+		h2 {
+			font-size: 3.5em;
+		}
+		h3 {
+			font-size:2em;
+			margin-bottom:0;
+		}
+		h4 {
+			color: #4e4e4e;
+			font-size:1.5em;
+			margin-top:0;
+		}
+		.skills {
+			margin-bottom: 10px;
+		}
+		p {
+			font-family: 'Open Sans';
+			font-size: 1.5em;
+		}
+		li {
+			font-family: 'Open Sans';
+			font-size: 1.5em;
+		}
+		.keywords {
+			background-color: #333333;
+			color:#fff;
+			padding: 6px;
+			font-size: 1.2em;
+			margin-bottom: 5px;
+			display:inline-block;
+		}
+		blockquote {
+			margin: 2em 10px;
+  			padding: 1em 10px;
+			border-left: 10px solid #edf0f5;
+			font-family: 'Open Sans';
+			font-size: 1.5em;
+		}
+		blockquote .name {
+			font-weight:bold;
+			font-family: "Montserrat";
+		}
+		.responsive-show {
+			display:none;
+		}
+		@media (max-width: 1000px) {
+  			.header {
+    			font-size: 1.66em;
+  			}
+  			h2 {
+  				font-size: 3em;
+  			}
+		}
+		@media (max-width: 500px) {
+			p {
+				font-size:1.2em;
+			}
+			li {
+				font-size:1.2em;
+			}
+			blockquote {
+				font-size:1.2em;
+			}
+			h2 {
+				font-size:2.3em;
+			}
+			.responsive-hidden {
+				display:none;
+				visibility: hidden;
+			}
+			.responsive-show {
+				display:inline;
+				visibility: visible;
+			}
+		}
+    </style>
+	<script src= "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  </head>
+  <body>
+	<div class= "header">
+		<h1>KIRILL DEMIDOV</h1>
+		<h3 class= "label">DATA ENGINEER TEAM LEAD</h3>
+		<div class= "contact-header">
+				Tel Aviv, Israel, IL<br>
+				Tel Aviv, Israel
+			</div>
+		<div id= "contact">
+			<br>
+			<div class= "contact-header">
+				EMAIL <span class= "responsive-hidden">&bull;</span> <span class= "responsive-show"><br></span><a href= "mailto:kirill.demidov@gmail.com" target= "_blank">kirill.demidov@gmail.com</a> <span class= "responsive-show"><br><br></span>
+			</div>
+			<div class= "contact-header">
+				PHONE <span class= "responsive-hidden">&bull;</span> <span class= "responsive-show"><br></span>+972542332917 <span class= "responsive-show"><br><br></span>
+			</div>
+		</div>
+		<br>
+		<div id= "profiles">
+			<div class= "contact-header">PROFILES</div><br>
+			<p class= "profile"><a href= "https:&#x2F;&#x2F;github.com&#x2F;kirilldemidov" target= "_blank" class= "profile">GitHub</a></p>
+			<p class= "profile"><a href= "https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kirilldemidov&#x2F;" target= "_blank" class= "profile">LinkedIn</a></p>
+		</div>		
+	</div>
+	<div class= "main">
+		<div id= "about">
+			<h2><i class= "fa fa-user left"></i> ABOUT</h2>
+			<p>
+				Experienced Data Engineer with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.
+			</p>
+		</div>
+		<div id= "skills">
+			<h2><i class= "fa fa-tasks left"></i> SKILLS</h2>
+				<h3 class= "skills">Data Engineering</h3>
+				<span class= "keywords">BigQuery</span>
+				<span class= "keywords">PostgreSQL</span>
+				<span class= "keywords">DuckDB</span>
+				<span class= "keywords">Dataform</span>
+				<span class= "keywords">dbt</span>
+				<h3 class= "skills">Cloud Platforms</h3>
+				<span class= "keywords">Google Cloud Platform</span>
+				<span class= "keywords">AWS</span>
+				<span class= "keywords">Cloud Data Lakes</span>
+				<h3 class= "skills">BI &amp; Analytics</h3>
+				<span class= "keywords">Looker</span>
+				<span class= "keywords">Power BI</span>
+				<span class= "keywords">Data Visualization</span>
+				<h3 class= "skills">Orchestration &amp; ETL</h3>
+				<span class= "keywords">Apache Airflow</span>
+				<span class= "keywords">Apache NiFi</span>
+				<span class= "keywords">Spark</span>
+		</div><br>
+		<div id= "education">
+			<h2><i class= "fa fa-graduation-cap left"></i> EDUCATION</h2>
+				<h3>Master, Political Science - Hebrew University of Jerusalem</h3>
+				<h4>June 2012 - January 2014</h4>
+				<h3>Bachelor, Political Science - Hebrew University of Jerusalem</h3>
+				<h4>June 2004 - January 2008</h4>
+				<h3>MCSE Certification, Business Intelligence - John Bryce College</h3>
+				<h4>June 2013 - January 2014</h4>
+		</div>
+		<div id= "languages">
+			<h2><i class= "fa fa-language left"></i> LANGUAGES</h2>
+				<h3>Hebrew</h3>
+				<h4>Fluency: Native speaker</h4>
+				<h3>Russian</h3>
+				<h4>Fluency: Native speaker</h4>
+				<h3>English</h3>
+				<h4>Fluency: Fluent</h4>
+		</div>
 
-    const startDate = new Date(from.dateTime || from.textContent)
-    const endDate = new Date(to ? to.dateTime || to.textContent : Date.now())
-    const diffDate = new Date(endDate - startDate)
-
-    const years = diffDate.getFullYear() - 1970
-    const months = diffDate.getMonth()
-    const days = diffDate.getDate() - 1
-
-    const segments = [
-      years && pluralize(years, 'yr'),
-      months && pluralize(months, 'mo'),
-      days && !years && !months && pluralize(days, 'day'),
-    ].filter(Boolean)
-    if (!segments.length) return
-
-    const duration = document.createElement('time')
-    duration.classList.add('duration')
-    duration.textContent = '· '.concat(segments.join(' '))
-
-    this.append(' ', duration)
-  }
-}
-
-customElements.define('time-duration', TimeDuration)
-
-        </script>
-      </head>
-      <body>
-        
-    <header class="masthead">
-      
-      <div><h1>Kirill Demidov</h1> <h2>Data Engineer Team Lead</h2></div>
-      <article><p>Experienced Data Engineer with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.</p></article>
-      <ul class="icon-list">
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Tel Aviv, Israel
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="mailto:kirill.demidov@gmail.com">kirill.demidov@gmail.com</a>
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <a href="tel:+972542332917">+972542332917</a>
-          </li>
-        
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> <a href="https://www.linkedin.com/in/kirilldemidov/">www.linkedin.com/in/kirilldemidov</a></li>
-        
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> <a href="https://github.com/kirilldemidov">kirilldemidov</a>
-              <span class="network">(GitHub)</span>
-            </li>
-          
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> <a href="https://www.linkedin.com/in/kirilldemidov/">kirilldemidov</a>
-              <span class="network">(LinkedIn)</span>
-            </li>
-          
-      </ul>
-    </header>
-   
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://arpeely.com">Arpeely</a></h4>
-                  <div class="meta"><div>AI-driven advertising technology company.</div></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Data Engineer Team Lead</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2022-07-01">Jul 2022</time> – Present</time-duration></div>
-                            <div>Tel Aviv, Israel</div>
-                          </div>
-                        </div>
-                        <p>Leading the data engineering team, building scalable data infrastructure, and developing BI solutions using Google Cloud, BigQuery, and Dataform.</p>
-                        
-                          <ul>
-                            <li><p>Refactored ELT pipelines from custom Python to scalable Dataform solution.</p></li><li><p>Designed and implemented a corporate Data Warehouse and Data Lake in GCP.</p></li><li><p>Deployed Looker-based BI system from scratch.</p></li><li><p>Implemented CI/CD pipelines for DWH and reporting.</p></li><li><p>Developed a data governance monitoring system.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.tango.me">Tango.me</a></h4>
-                  <div class="meta"><div>Live-streaming platform for content creators.</div></div>
-                </header>
-                <div class="timeline">
-                  
-                      <div>
-                        <div>
-                          <h5>Data Engineer Team Lead</h5>
-                          <div class="meta">
-                            <div><time-duration><time datetime="2021-07-01">Jul 2021</time> – <time datetime="2022-07-01">Jul 2022</time></time-duration></div>
-                            <div>Tel Aviv, Israel</div>
-                          </div>
-                        </div>
-                        <p>Managed a team of data engineers and BI developers, implementing data pipelines and analytics solutions in GCP.</p>
-                        
-                          <ul>
-                            <li><p>Led a team of 6 data engineers and BI developers.</p></li><li><p>Developed corporate Data Lake and Data Warehouse in GCP with Airflow and dbt.</p></li><li><p>Implemented data governance and data quality monitoring using SelectStar and SodaSQL.</p></li><li><p>Designed and built analytics and operational reports on Looker.</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-        </div>
-      </section>
-      
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://new.huji.ac.il/en">Hebrew University of Jerusalem</a></h4>
-                  <div class="meta">
-                    <strong>Political Science</strong>
-                    <div><time-duration><time datetime="2012-06-01">Jun 2012</time> – <time datetime="2014-01-01">Jan 2014</time></time-duration></div>
-                  </div>
-                </header>
-                <p>Master</p>
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://new.huji.ac.il/en">Hebrew University of Jerusalem</a></h4>
-                  <div class="meta">
-                    <strong>Political Science</strong>
-                    <div><time-duration><time datetime="2004-06-01">Jun 2004</time> – <time datetime="2008-01-01">Jan 2008</time></time-duration></div>
-                  </div>
-                </header>
-                <p>Bachelor</p>
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.johnbryce.co.il">John Bryce College</a></h4>
-                  <div class="meta">
-                    <strong>Business Intelligence</strong>
-                    <div><time-duration><time datetime="2013-06-01">Jun 2013</time> – <time datetime="2014-01-01">Jan 2014</time></time-duration></div>
-                  </div>
-                </header>
-                <p>MCSE Certification</p>
-                
-              </article>
-            
-        </div>
-      </section>
-    
-        
-      <section id="projects">
-        <h3>Projects</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://example.com/data-lake">Data Lake Implementation</a></h4>
-                  <div class="meta">
-                    <div>
-                      <strong>Tech Lead and Architect</strong>
-                      at <strong>Tango.me</strong>
-                    </div>
-                    <div><time-duration><time datetime="2021-08-01">Aug 2021</time> – <time datetime="2022-07-01">Jul 2022</time></time-duration></div> <div>Data Engineering</div>
-                  </div>
-                </header>
-                <p>Designed and built a corporate Data Lake for analytics and reporting.</p>
-                
-                  <ul>
-                    <li><p>Implemented scalable cloud storage solutions.</p></li><li><p>Optimized data partitioning and query performance.</p></li><li><p>Automated data ingestion using Apache Airflow.</p></li>
-                  </ul>
-                
-                
-                  <ul class="tag-list">
-                    <li>BigQuery</li><li>Google Cloud Storage</li><li>Apache Airflow</li>
-                  </ul>
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://example.com/bi-deployment">Enterprise BI Deployment</a></h4>
-                  <div class="meta">
-                    <div>
-                      <strong>BI Architect and Data Engineer</strong>
-                      at <strong>Arpeely</strong>
-                    </div>
-                    <div><time-duration><time datetime="2022-09-01">Sep 2022</time> – <time datetime="2023-06-01">Jun 2023</time></time-duration></div> <div>Business Intelligence</div>
-                  </div>
-                </header>
-                <p>Built an end-to-end BI and reporting system using Looker and Google Cloud.</p>
-                
-                  <ul>
-                    <li><p>Integrated multiple data sources into Looker.</p></li><li><p>Designed intuitive dashboards for business users.</p></li><li><p>Implemented role-based data access security.</p></li>
-                  </ul>
-                
-                
-                  <ul class="tag-list">
-                    <li>Looker</li><li>Dataform</li><li>CI/CD</li>
-                  </ul>
-                
-              </article>
-            
-        </div>
-      </section>
-      
-         
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-          
-              <div>
-                <h4>Data Engineering</h4>
-                
-                  <ul class="tag-list">
-                    <li>BigQuery</li><li>PostgreSQL</li><li>DuckDB</li><li>Dataform</li><li>dbt</li>
-                  </ul>
-                
-              </div>
-            
-              <div>
-                <h4>Cloud Platforms</h4>
-                
-                  <ul class="tag-list">
-                    <li>Google Cloud Platform</li><li>AWS</li><li>Cloud Data Lakes</li>
-                  </ul>
-                
-              </div>
-            
-              <div>
-                <h4>BI & Analytics</h4>
-                
-                  <ul class="tag-list">
-                    <li>Looker</li><li>Power BI</li><li>Data Visualization</li>
-                  </ul>
-                
-              </div>
-            
-              <div>
-                <h4>Orchestration & ETL</h4>
-                
-                  <ul class="tag-list">
-                    <li>Apache Airflow</li><li>Apache NiFi</li><li>Spark</li>
-                  </ul>
-                
-              </div>
-            
-        </div>
-      </section>
-     
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-          <div><h4>Hebrew</h4> Native speaker</div><div><h4>Russian</h4> Native speaker</div><div><h4>English</h4> Fluent</div>
-        </div>
-      </section>
-    
-         
-      </body>
-    </html>
+	</div>
+  </body>
+</html>
