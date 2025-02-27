@@ -1,0 +1,204 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Kirill Demidov",
+      "label": "Data Engineer Team Lead",
+      "image": "",
+      "email": "kirill.demidov@gmail.com",
+      "phone": "+972542332917",
+      "url": "https://www.linkedin.com/in/kirilldemidov/",
+      "summary": "Experienced Data Engineer with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.",
+      "location": {
+        "address": "Tel Aviv, Israel",
+        "postalCode": "",
+        "city": "Tel Aviv",
+        "countryCode": "IL",
+        "region": "Israel"
+      },
+      "profiles": [
+        {
+          "network": "GitHub",
+          "username": "kirilldemidov",
+          "url": "https://github.com/kirilldemidov"
+        },
+        {
+          "network": "LinkedIn",
+          "username": "kirilldemidov",
+          "url": "https://www.linkedin.com/in/kirilldemidov/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Arpeely",
+        "location": "Tel Aviv, Israel",
+        "description": "AI-driven advertising technology company.",
+        "position": "Data Engineer Team Lead",
+        "url": "https://arpeely.com",
+        "startDate": "2022-07-01",
+        "summary": "Leading the data engineering team, building scalable data infrastructure, and developing BI solutions using Google Cloud, BigQuery, and Dataform.",
+        "highlights": [
+          "Refactored ELT pipelines from custom Python to scalable Dataform solution.",
+          "Designed and implemented a corporate Data Warehouse and Data Lake in GCP.",
+          "Deployed Looker-based BI system from scratch.",
+          "Implemented CI/CD pipelines for DWH and reporting.",
+          "Developed a data governance monitoring system."
+        ]
+      },
+      {
+        "name": "Tango.me",
+        "location": "Tel Aviv, Israel",
+        "description": "Live-streaming platform for content creators.",
+        "position": "Data Engineer Team Lead",
+        "url": "https://www.tango.me",
+        "startDate": "2021-07-01",
+        "endDate": "2022-07-01",
+        "summary": "Managed a team of data engineers and BI developers, implementing data pipelines and analytics solutions in GCP.",
+        "highlights": [
+          "Led a team of 6 data engineers and BI developers.",
+          "Developed corporate Data Lake and Data Warehouse in GCP with Airflow and dbt.",
+          "Implemented data governance and data quality monitoring using SelectStar and SodaSQL.",
+          "Designed and built analytics and operational reports on Looker."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Hebrew University of Jerusalem",
+        "url": "https://new.huji.ac.il/en",
+        "area": "Political Science",
+        "studyType": "Master",
+        "startDate": "2012-06-01",
+        "endDate": "2014-01-01",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Hebrew University of Jerusalem",
+        "url": "https://new.huji.ac.il/en",
+        "area": "Political Science",
+        "studyType": "Bachelor",
+        "startDate": "2004-06-01",
+        "endDate": "2008-01-01",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "John Bryce College",
+        "url": "https://www.johnbryce.co.il",
+        "area": "Business Intelligence",
+        "studyType": "MCSE Certification",
+        "startDate": "2013-06-01",
+        "endDate": "2014-01-01",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "skills": [
+      {
+        "name": "Data Engineering",
+        "level": "Expert",
+        "keywords": [
+          "BigQuery",
+          "PostgreSQL",
+          "DuckDB",
+          "Dataform",
+          "dbt"
+        ]
+      },
+      {
+        "name": "Cloud Platforms",
+        "level": "Expert",
+        "keywords": [
+          "Google Cloud Platform",
+          "AWS",
+          "Cloud Data Lakes"
+        ]
+      },
+      {
+        "name": "BI & Analytics",
+        "level": "Advanced",
+        "keywords": [
+          "Looker",
+          "Power BI",
+          "Data Visualization"
+        ]
+      },
+      {
+        "name": "Orchestration & ETL",
+        "level": "Advanced",
+        "keywords": [
+          "Apache Airflow",
+          "Apache NiFi",
+          "Spark"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Hebrew",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Russian",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Fluent"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Data Lake Implementation",
+        "description": "Designed and built a corporate Data Lake for analytics and reporting.",
+        "highlights": [
+          "Implemented scalable cloud storage solutions.",
+          "Optimized data partitioning and query performance.",
+          "Automated data ingestion using Apache Airflow."
+        ],
+        "keywords": [
+          "BigQuery",
+          "Google Cloud Storage",
+          "Apache Airflow"
+        ],
+        "startDate": "2021-08-01",
+        "endDate": "2022-07-01",
+        "url": "https://example.com/data-lake",
+        "roles": [
+          "Tech Lead",
+          "Architect"
+        ],
+        "entity": "Tango.me",
+        "type": "Data Engineering"
+      },
+      {
+        "name": "Enterprise BI Deployment",
+        "description": "Built an end-to-end BI and reporting system using Looker and Google Cloud.",
+        "highlights": [
+          "Integrated multiple data sources into Looker.",
+          "Designed intuitive dashboards for business users.",
+          "Implemented role-based data access security."
+        ],
+        "keywords": [
+          "Looker",
+          "Dataform",
+          "CI/CD"
+        ],
+        "startDate": "2022-09-01",
+        "endDate": "2023-06-01",
+        "url": "https://example.com/bi-deployment",
+        "roles": [
+          "BI Architect",
+          "Data Engineer"
+        ],
+        "entity": "Arpeely",
+        "type": "Business Intelligence"
+      }
+    ],
+    "meta": {
+      "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
+      "version": "v1.0.0",
+      "lastModified": "2025-02-27T15:00:00"
+    }
+  }
