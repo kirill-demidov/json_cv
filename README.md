@@ -1,66 +1,68 @@
 # JSON Resume - Kirill Demidov
 
-A modern, responsive HTML resume built from JSON data using the JSON Resume standard format.
+A professional resume/CV built using the JSON Resume standard and rendered as a modern web page.
 
-## Overview
+## About
 
-This repository contains a professional resume for Kirill Demidov, Data Engineer Team Lead, generated from structured JSON data and rendered as a clean, modern HTML page.
-
-## Features
-
-- **JSON Resume Standard**: Built using the official [JSON Resume Schema](https://jsonresume.org/)
-- **Responsive Design**: Mobile-friendly layout that works on all devices
-- **Dark/Light Mode**: Automatic theme switching based on user preferences
-- **Print-Optimized**: Clean formatting for PDF generation and printing
-- **Professional Styling**: Modern, clean design with proper typography
+This repository contains my professional resume in JSON format, following the [JSON Resume](https://jsonresume.org/) schema, along with a styled HTML presentation.
 
 ## Files
 
 - `cv_Kirill_Demidov_DE.json` - Resume data in JSON Resume format
-- `resume.html` - Generated HTML resume
-- `index.css` - Custom styling (if applicable)
+- `resume.html` - Styled HTML presentation of the resume
+- `index.css` - Styling for the resume presentation
+
+## Features
+
+- **JSON Resume Standard**: Follows the official JSON Resume schema v1.0.0
+- **Responsive Design**: Mobile-friendly layout that works on all devices
+- **Modern Styling**: Clean, professional appearance with dark/light mode support
+- **Print Optimized**: Designed to look great both on screen and when printed
+- **Semantic HTML**: Well-structured markup for accessibility
+
+## View Resume
+
+To view the resume:
+
+1. Open `resume.html` in your web browser
+2. Or visit the live version (if hosted)
 
 ## JSON Resume Schema
 
-The resume data follows the [JSON Resume Schema v1.0.0](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json) which includes:
+The resume follows the standard JSON Resume schema which includes:
+- Basic information and contact details
+- Professional summary
+- Work experience
+- Education
+- Skills
+- Projects
+- Languages
+- References
 
-- **Basics**: Contact information, summary, location
-- **Work Experience**: Professional history with roles and achievements
-- **Education**: Academic background
-- **Skills**: Technical and professional competencies
-- **Projects**: Notable work and contributions
-- **Languages**: Language proficiencies
+## Technical Details
 
-## Viewing the Resume
+- **Schema**: JSON Resume v1.0.0
+- **Styling**: Modern CSS with CSS Grid and Flexbox
+- **Typography**: Lato font family
+- **Color Scheme**: Adaptive light/dark theme support
+- **Icons**: Integrated icon support for contact methods
 
-1. Open `resume.html` in any modern web browser
-2. The resume will automatically adapt to your device and theme preferences
-3. For printing or PDF generation, use your browser's print function
+## About the Person
 
-## Updating the Resume
+**Kirill Demidov** - Data Engineer Team Lead with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.
 
-1. Edit the `cv_Kirill_Demidov_DE.json` file with new information
-2. Regenerate the HTML using any JSON Resume theme generator
-3. Or manually update the HTML file to reflect changes
+## Contact
 
-## JSON Resume Tools
+- **Location**: Tel Aviv, Israel
+- **LinkedIn**: [linkedin.com/in/kirilldemidov](https://www.linkedin.com/in/kirilldemidov/)
+- **GitHub**: [github.com/kirilldemidov](https://github.com/kirilldemidov)
 
-This resume is compatible with the JSON Resume ecosystem:
-- [JSON Resume CLI](https://github.com/jsonresume/resume-cli)
-- [Online Resume Builder](https://jsonresume.org/)
-- [Various Themes](https://jsonresume.org/themes/)
+## Usage
 
-## Professional Profile
+This resume format can be used with:
+- JSON Resume CLI tools
+- Online resume builders
+- Custom resume applications
+- Print/PDF generation tools
 
-**Kirill Demidov** - Data Engineer Team Lead  
-Experienced Data Engineer with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.
-
-- 📧 kirill.demidov@gmail.com
-- 📱 +972542332917
-- 🌐 [LinkedIn](https://www.linkedin.com/in/kirilldemidov/)
-- 💻 [GitHub](https://github.com/kirilldemidov)
-- 📍 Tel Aviv, Israel
-
-## License
-
-This resume template and content are for professional use. The JSON Resume format is open source.
+To validate the JSON structure, you can use the official JSON Resume validator or schema validation tools.
