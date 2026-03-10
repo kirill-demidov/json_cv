@@ -30,6 +30,21 @@
     },
     "work": [
       {
+        "name": "OneUpGames (formerly Guns and Gangs)",
+        "location": "Tel Aviv, Israel",
+        "description": "Mobile gaming and adtech company.",
+        "position": "Data Engineer Team Lead",
+        "url": "https://oneupgames.com",
+        "startDate": "2024-07-01",
+        "summary": "Leading the data engineering team, building modular automation tools, and developing complex product analytics for mobile games using GCP, BigQuery, and Dataform.",
+        "highlights": [
+          "Developed 'GG DE Bot': A modular Slack bot for Data Engineering automation with AI-driven BigQuery metadata management (OpenAI) and automated PII masking.",
+          "Designed and implemented complex product analytics pipelines in Dataform for mobile gaming behavior, battle metrics, and tutorial funnels.",
+          "Architected a centralized data governance system including regression alerting and automated BigQuery documentation.",
+          "Modernized data infrastructure and CI/CD workflows using GCP Cloud Run, Cloud Build, and Artifact Registry."
+        ]
+      },
+      {
         "name": "Arpeely",
         "location": "Tel Aviv, Israel",
         "description": "AI-driven advertising technology company.",
@@ -175,16 +190,34 @@
           "PostgreSQL",
           "DuckDB",
           "Dataform",
-          "dbt"
+          "dbt",
+          "FastAPI",
+          "SQL"
         ]
       },
       {
-        "name": "Cloud Platforms",
+        "name": "AI & LLM Integration",
+        "level": "Advanced",
+        "keywords": [
+          "OpenAI API",
+          "Google Gemini",
+          "RAG Architecture",
+          "Qdrant",
+          "Vector Databases",
+          "Prompt Engineering"
+        ]
+      },
+      {
+        "name": "Cloud & Infrastructure",
         "level": "Expert",
         "keywords": [
-          "Google Cloud Platform",
+          "Google Cloud Platform (GCP)",
           "AWS",
-          "Cloud Data Lakes"
+          "Cloud Run",
+          "Cloud Build",
+          "Docker",
+          "Nginx",
+          "CI/CD"
         ]
       },
       {
@@ -193,7 +226,8 @@
         "keywords": [
           "Looker",
           "Power BI",
-          "Data Visualization"
+          "Product Analytics",
+          "Funnel Analysis"
         ]
       },
       {
@@ -202,7 +236,8 @@
         "keywords": [
           "Apache Airflow",
           "Apache NiFi",
-          "Spark"
+          "Spark",
+          "Python"
         ]
       }
     ],
@@ -221,6 +256,54 @@
       }
     ],
     "projects": [
+      {
+        "name": "SOZD Legislative Monitoring ecosystem",
+        "description": "Built a multi-layer ecosystem for monitoring and analyzing Russian legislative data using LLMs and semantic search.",
+        "highlights": [
+          "Implemented a RAG-based semantic search system over government transcripts using Qdrant and OpenAI embeddings.",
+          "Developed an LLM-powered analysis service for bills using Google Gemini (1.5 Pro/Flash).",
+          "Built a centralized RestProxy API (FastAPI) as a gateway to PostgreSQL and BigQuery.",
+          "Created multiple interfaces: analytics web portal (Flask/Bootstrap) and real-time Telegram monitoring bots."
+        ],
+        "keywords": [
+          "Python",
+          "FastAPI",
+          "Gemini LLM",
+          "Qdrant",
+          "GCP",
+          "Docker"
+        ],
+        "startDate": "2023-01-01",
+        "url": "https://sozd-chat.org",
+        "roles": [
+          "Full Stack Developer",
+          "Architect",
+          "Data Engineer"
+        ],
+        "entity": "Personal Project",
+        "type": "AI / Data Engineering"
+      },
+      {
+        "name": "GCP Billing CLI Tool",
+        "description": "Terminal-based tool for rapid analysis and optimization of GCP costs.",
+        "highlights": [
+          "Provides deep dives into Compute Engine, BigQuery, and Networking costs from the CLI.",
+          "Integrates with Google Recommender to suggest cost-saving opportunities.",
+          "Containerized version for consistent deployment across DE teams."
+        ],
+        "keywords": [
+          "Python",
+          "GCP Billing API",
+          "Docker",
+          "Cloud Shell"
+        ],
+        "startDate": "2024-05-01",
+        "roles": [
+          "Developer"
+        ],
+        "entity": "Personal Project",
+        "type": "Tools"
+      },
       {
         "name": "Data Lake Implementation",
         "description": "Designed and built a corporate Data Lake for analytics and reporting.",
@@ -243,34 +326,11 @@
         ],
         "entity": "Tango.me",
         "type": "Data Engineering"
-      },
-      {
-        "name": "Enterprise BI Deployment",
-        "description": "Built an end-to-end BI and reporting system using Looker and Google Cloud.",
-        "highlights": [
-          "Integrated multiple data sources into Looker.",
-          "Designed intuitive dashboards for business users.",
-          "Implemented role-based data access security."
-        ],
-        "keywords": [
-          "Looker",
-          "Dataform",
-          "CI/CD"
-        ],
-        "startDate": "2022-09-01",
-        "endDate": "2023-06-01",
-        "url": "https://example.com/bi-deployment",
-        "roles": [
-          "BI Architect",
-          "Data Engineer"
-        ],
-        "entity": "Arpeely",
-        "type": "Business Intelligence"
       }
     ],
     "meta": {
       "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
       "version": "v1.0.0",
-      "lastModified": "2025-02-27T15:00:00"
+      "lastModified": "2026-03-10T20:16:00"
     }
   }

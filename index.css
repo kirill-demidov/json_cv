@@ -1,0 +1,207 @@
+:root {
+  /* Color Palette - Professional DE Style */
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --text-muted: #666666;
+  --accent-color: #0066cc;
+  --accent-soft: #e6f0ff;
+  --border-color: #eeeeee;
+  --sidebar-bg: #f8f9fa;
+  
+  /* Spacing */
+  --container-max: 900px;
+  --section-gap: 3rem;
+  --item-gap: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0d1117;
+    --text-color: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent-color: #58a6ff;
+    --accent-soft: #161b22;
+    --border-color: #30363d;
+    --sidebar-bg: #161b22;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Sidebar Styling */
+aside {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--accent-color);
+  border: 4px solid var(--border-color);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.label {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  list-style: none;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-info a:hover {
+  color: var(--accent-color);
+}
+
+/* Main Content Styling */
+main section {
+  margin-bottom: var(--section-gap);
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.experience-item, .project-item {
+  margin-bottom: var(--item-gap);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.item-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.date-range {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.company-name, .project-entity {
+  font-weight: 500;
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlights {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.highlights li {
+  margin-bottom: 0.3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: var(--accent-soft);
+  color: var(--accent-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Print Optimization */
+@media print {
+  body { padding: 0; }
+  .container { display: block; }
+  aside { position: static; margin-bottom: 2rem; }
+  .profile-img { display: none; }
+  .tag { border: 1px solid #ccc; background: none; }
+}
