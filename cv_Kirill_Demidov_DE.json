@@ -179,6 +179,34 @@
         "endDate": "2014-01-01",
         "score": "",
         "courses": []
+      },
+      {
+        "institution": "Google Cloud / Coursera",
+        "url": "https://www.coursera.org/specializations/google-cloud-data-ml-engineer",
+        "area": "Google BigQuery for Data and ML Engineers",
+        "studyType": "Professional Certification",
+        "startDate": "2024-01-01",
+        "endDate": "2024-03-01",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Analytics Engineering / Masthead Data",
+        "area": "Hands-On Analytics Engineering",
+        "studyType": "Course",
+        "startDate": "2024-04-01",
+        "endDate": "2024-05-01",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "AI Developer Community",
+        "area": "Beyond Vibe Coding with Google Gemini",
+        "studyType": "AI Developer Certification",
+        "startDate": "2024-06-01",
+        "endDate": "2024-07-01",
+        "score": "",
+        "courses": []
       }
     ],
     "skills": [
@@ -385,7 +413,8 @@
         "title": "Patent: Data acquisition and processing platform for IIoT",
         "date": "2020-11-17",
         "awarder": "USPTO (US 10,838,836)",
-        "summary": "Designed a scalable IIoT routing and ingestion backbone for industrial control systems."
+        "summary": "Designed a scalable IIoT routing and ingestion backbone for industrial control systems.",
+        "url": "https://patents.google.com/patent/US10838836B2"
       }
     ],
     "meta": {
