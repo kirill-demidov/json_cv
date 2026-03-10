@@ -239,6 +239,16 @@
           "Spark",
           "Python"
         ]
+      },
+      {
+        "name": "Specialized Tech",
+        "level": "Advanced",
+        "keywords": [
+          "Industrial IoT (IIoT)",
+          "Technical Writing (Medium)",
+          "Patent Filing",
+          "Data Governance"
+        ]
       }
     ],
     "languages": [
@@ -326,6 +336,56 @@
         ],
         "entity": "Tango.me",
         "type": "Data Engineering"
+      },
+      {
+        "name": "SaferTrips – Datathon Project",
+        "description": "Making roads safer with AI & Big Data using Israel Central Bureau of Statistics data.",
+        "highlights": [
+          "Participated in the first-ever Datathon organized by the Israel Central Bureau of Statistics.",
+          "Used Python and BigQuery to analyze and visualize road safety data."
+        ],
+        "keywords": ["AI", "BigQuery", "Data Visualization", "Road Safety"],
+        "startDate": "2024-01-01",
+        "roles": ["Data Engineer", "Analyst"],
+        "entity": "Datathon",
+        "type": "Competition"
+      },
+      {
+        "name": "AI Essay Grader",
+        "description": "An AI-powered bot developed to automate the grading of student essays.",
+        "highlights": [
+          "Developed in collaboration with ML engineers and educators using modern LLM APIs.",
+          "Automated grading workflows for large-scale educational platforms."
+        ],
+        "keywords": ["AI", "LLM", "NLP", "Python"],
+        "startDate": "2024-01-01",
+        "roles": ["Lead Developer"],
+        "entity": "Personal Project",
+        "type": "AI"
+      }
+    ],
+    "publications": [
+      {
+        "name": "Merge in BigQuery and DML Limits: How to Overcome Upsert Restrictions",
+        "publisher": "Medium",
+        "releaseDate": "2024-05-04",
+        "url": "https://medium.com/@kirkademidov/merge-in-bigquery-and-dml-limits-how-to-overcome-upsert-restrictions-dc7507d6d997",
+        "summary": "Technical guide on optimizing BigQuery upserts and managing DML limits."
+      },
+      {
+        "name": "Alleviating the Headaches of Data Schema Changes for Engineers",
+        "publisher": "Medium",
+        "releaseDate": "2024-05-02",
+        "url": "https://medium.com/@kirkademidov/alleviating-the-headaches-of-data-schema-changes-for-engineers-8d6cb5f0b946",
+        "summary": "Strategies for handling evolving schemas in high-volume production data environments."
+      }
+    ],
+    "awards": [
+      {
+        "title": "Patent: Data acquisition and processing platform for IIoT",
+        "date": "2020-11-17",
+        "awarder": "USPTO (US 10,838,836)",
+        "summary": "Designed a scalable IIoT routing and ingestion backbone for industrial control systems."
       }
     ],
     "meta": {
