@@ -55,7 +55,7 @@ The resume follows the standard JSON Resume schema which includes:
 
 - **Location**: Tel Aviv, Israel
 - **LinkedIn**: [linkedin.com/in/kirilldemidov](https://www.linkedin.com/in/kirilldemidov/)
-- **GitHub**: [github.com/kirilldemidov](https://github.com/kirilldemidov)
+- **GitHub**: [github.com/kirill-demidov](https://github.com/kirill-demidov)
 
 ## Usage
 
