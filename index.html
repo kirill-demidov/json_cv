@@ -179,6 +179,100 @@
         <div class="project-list">
           <div class="project-item">
             <div class="item-header">
+              <h3>Agent Board</h3>
+              <span class="date-range">2026 – Present</span>
+            </div>
+            <div class="project-entity">Open Source | <a href="https://github.com/kirill-demidov/agent-board">kirill-demidov/agent-board</a></div>
+            <p class="summary">A board for AI coding agents: every running session as a card, with live status and take-over.</p>
+            <ul class="highlights">
+              <li>Added discovery of sessions started outside the board, read from the CLI&#x27;s own session registry and labelled with the app hosting them.</li>
+              <li>Added take-over: kills the external process and resumes the same conversation under the board&#x27;s control.</li>
+              <li>Added full-text search across every past conversation, reusing an existing SQLite FTS5 index read-only.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>BigQuery Metadata Manager</h3>
+              <span class="date-range">2025 – Present</span>
+            </div>
+            <div class="project-entity">Personal Project | <a href="https://github.com/kirill-demidov/bigquery-metadata-manager">kirill-demidov/bigquery-metadata-manager</a></div>
+            <p class="summary">Generates table and column descriptions for BigQuery with an LLM and applies them after review.</p>
+            <ul class="highlights">
+              <li>Web UI for reviewing and editing generated metadata before anything is written back.</li>
+              <li>Keeps BigQuery schemas and meta-tables in sync automatically.</li>
+              <li>Masks sensitive data and batches requests to keep cost predictable.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>Maps to Waze Bot</h3>
+              <span class="date-range">2025 – Present</span>
+            </div>
+            <div class="project-entity">Personal Project | <a href="https://github.com/kirill-demidov/maps-to-waze-bot">kirill-demidov/maps-to-waze-bot</a></div>
+            <p class="summary">Telegram bot converting Google Maps links and coordinates into Waze navigation.</p>
+            <ul class="highlights">
+              <li>Expands shortened maps.app.goo.gl links and parses both decimal and DMS coordinates.</li>
+              <li>Bilingual with per-user language preferences, admin commands and usage analytics.</li>
+              <li>Dockerised with deployment scripts; in daily use.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>Gmail Receipt Scanner</h3>
+              <span class="date-range">2025 – Present</span>
+            </div>
+            <div class="project-entity">Personal Project | <a href="https://github.com/kirill-demidov/gmail-receipt-scanner">kirill-demidov/gmail-receipt-scanner</a></div>
+            <p class="summary">Finds receipts, invoices and bills in a mailbox and extracts structured data from them.</p>
+            <ul class="highlights">
+              <li>Handles scanned attachments via OCR across several languages.</li>
+              <li>Turns unstructured mail into structured financial records.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>Knesset Election Results in DuckDB</h3>
+              <span class="date-range">2026 – Present</span>
+            </div>
+            <div class="project-entity">Open Data | <a href="https://github.com/kirill-demidov/israel_elections_row_data">kirill-demidov/israel_elections_row_data</a></div>
+            <p class="summary">Raw Israeli election data packaged as a queryable DuckDB database instead of scraped spreadsheets.</p>
+            <ul class="highlights">
+              <li>Collected from the Central Elections Committee CKAN portal on data.gov.il.</li>
+              <li>Makes historical results analysable with plain SQL.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>Mandate Allocation Calculator</h3>
+              <span class="date-range">2021 – Present</span>
+            </div>
+            <div class="project-entity">Open Source | <a href="https://github.com/kirill-demidov/mandate-allocation-calculator">kirill-demidov/mandate-allocation-calculator</a></div>
+            <p class="summary">Turns election results into parliamentary seats across several allocation methods.</p>
+            <ul class="highlights">
+              <li>Implements Hare, Droop and Sainte-Lague side by side so systems can be compared on the same votes.</li>
+              <li>Interactive visualisation of the resulting distribution.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
+              <h3>NewsPulse</h3>
+              <span class="date-range">2025</span>
+            </div>
+            <div class="project-entity">Personal Project | <a href="https://github.com/kirill-demidov/NewsPulse">kirill-demidov/NewsPulse</a></div>
+            <p class="summary">Multilingual news aggregation pipeline with a REST API over the results.</p>
+            <ul class="highlights">
+              <li>Collects and processes news from multiple sources across languages.</li>
+              <li>Exposes the processed corpus through a REST API.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="item-header">
               <h3>SOZD Legislative Monitoring ecosystem</h3>
               <span class="date-range">2023 – Present</span>
             </div>
