@@ -25,6 +25,10 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      # index.html собирается из JSON, если в репозитории есть генератор:
+      # публикуем то, что соответствует данным, а не то, что закоммитили
+      - name: Build page from source data
+        run: '[ -f build.py ] && python3 build.py || echo "no build.py, publishing as is"'
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

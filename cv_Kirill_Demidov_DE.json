@@ -92,7 +92,8 @@
                 "Designed and implemented an operational Data Warehouse for PDC application data using PostgreSQL.",
                 "Built a Data Mart module for Atlassian Jira Software based on PostgreSQL and Cube.js.",
                 "Developed and visualized analytical reports for DF data processing."
-            ]
+            ],
+            "displayHighlight": "Designed and implemented a modular data ingestion and processing backbone for Industrial Internet of Things (IIoT)."
         },
         {
             "name": "SafeCharge",
@@ -109,7 +110,8 @@
                 "Developed a semantic layer using SSAS (OLAP Cube).",
                 "Designed and implemented a reporting system using SSRS and Power BI.",
                 "Migrated OLAP-based BI system to a Big Data environment using AWS Data Lake (S3), ELT pipelines with Apache NiFi and Spark (PySpark), and MemSQL as the semantic layer."
-            ]
+            ],
+            "displayHighlight": "Migrated OLAP-based BI system to a Big Data environment using AWS Data Lake (S3), Apache NiFi, and Spark."
         },
         {
             "name": "Data Cube",
@@ -121,6 +123,7 @@
             "endDate": "2018-08-01",
             "summary": "Managed BI projects and developed BI & Big Data solutions for various enterprises.",
             "highlights": [
+                "Managed BI projects for enterprise clients including BioCatch, Postal Bank, Panaya, and Amdocs.",
                 "Managed BI projects from conceptualization to full implementation.",
                 "Analyzed business requirements and developed project deliverables.",
                 "Maintained ETL platforms using SSIS, Python, and T-SQL.",
@@ -128,7 +131,8 @@
                 "Developed OLAP and Tabular Cube semantic layers.",
                 "Implemented reporting systems using Pyramid BI Office, SSRS, Necto Panorama, Power BI, and Business Objects.",
                 "Served major clients including BioCatch, Postal Bank of Israel, Bituach Yashir, Mimun Yashir, MKS Instruments, Taglit Birthright Israel, Panaya, Reuth Medical Rehabilitation Center, Medinol, LiderForex, and Amdocs."
-            ]
+            ],
+            "displayHighlight": "Managed BI projects for enterprise clients including BioCatch, Postal Bank, Panaya, and Amdocs."
         },
         {
             "name": "Company for Location and Restitution of Holocaust Victims' Assets",
@@ -144,7 +148,10 @@
                 "Designed and managed ETL processes for data integration and reporting.",
                 "Created, managed, and supported a SharePoint-based database system.",
                 "Led a team in developing research projects, providing training, and knowledge sharing."
-            ]
+            ],
+            "displayName": "Holocaust Victims' Assets Restitution Co.",
+            "displayPosition": "Head of Data Management and Integration",
+            "displayHighlight": "Developed complex data integration and knowledge management tools using MS SQL Server."
         }
     ],
     "education": [
@@ -218,7 +225,8 @@
                 "Dataform",
                 "dbt",
                 "FastAPI",
-                "SQL"
+                "SQL",
+                "T-SQL"
             ]
         },
         {
@@ -230,7 +238,8 @@
                 "RAG Architecture",
                 "Qdrant",
                 "Vector Databases",
-                "Prompt Engineering"
+                "Prompt Engineering",
+                "Agentic AI"
             ]
         },
         {
@@ -243,7 +252,8 @@
                 "Cloud Build",
                 "Docker",
                 "Nginx",
-                "CI/CD"
+                "CI/CD",
+                "Artifact Registry"
             ]
         },
         {
@@ -253,7 +263,10 @@
                 "Looker",
                 "Power BI",
                 "Product Analytics",
-                "Funnel Analysis"
+                "Funnel Analysis",
+                "Tableau",
+                "SSRS",
+                "SSAS"
             ]
         },
         {
@@ -263,7 +276,11 @@
                 "Apache Airflow",
                 "Apache NiFi",
                 "Spark",
-                "Python"
+                "Python",
+                "PySpark",
+                "SSIS",
+                "SodaSQL",
+                "SelectStar"
             ]
         },
         {
@@ -273,7 +290,8 @@
                 "Industrial IoT (IIoT)",
                 "Technical Writing (Medium)",
                 "Patent Filing",
-                "Data Governance"
+                "Data Governance",
+                "Big Data Architecture"
             ]
         }
     ],
@@ -367,7 +385,8 @@
             "description": "Making roads safer with AI & Big Data using Israel Central Bureau of Statistics data.",
             "highlights": [
                 "Participated in the first-ever Datathon organized by the Israel Central Bureau of Statistics.",
-                "Used Python and BigQuery to analyze and visualize road safety data."
+                "Used Python and BigQuery to analyze and visualize road safety data.",
+                "Analyzed road safety data to provide actionable insights using AI and Big Data during the CBS Datathon."
             ],
             "keywords": [
                 "AI",
@@ -388,7 +407,8 @@
             "description": "An AI-powered bot developed to automate the grading of student essays.",
             "highlights": [
                 "Developed in collaboration with ML engineers and educators using modern LLM APIs.",
-                "Automated grading workflows for large-scale educational platforms."
+                "Automated grading workflows for large-scale educational platforms.",
+                "Collaborated on an AI bot to automate essay grading for educators using modern LLM APIs."
             ],
             "keywords": [
                 "AI",

@@ -66,3 +66,21 @@ This resume format can be used with:
 - Print/PDF generation tools
 
 To validate the JSON structure, you can use the official JSON Resume validator or schema validation tools.
+## Editing
+
+`index.html` is generated — do not edit it by hand.
+
+The source of truth is `cv_Kirill_Demidov_DE.json` ([JSON Resume](https://jsonresume.org/)
+schema). Change it, then rebuild:
+
+```sh
+python3 build.py            # regenerate index.html
+python3 build.py --check    # fail if index.html is out of date
+```
+
+The GitHub Actions workflow rebuilds before publishing, so the live page always
+matches the JSON even if a stale `index.html` is committed. This replaced a
+hand-written copy of the same data, which had already drifted: a renamed
+employer had to be fixed in two files, the skill list in the markup had
+overtaken the JSON, and seven public repositories were missing from Key
+Projects entirely.
