@@ -84,3 +84,20 @@ hand-written copy of the same data, which had already drifted: a renamed
 employer had to be fixed in two files, the skill list in the markup had
 overtaken the JSON, and seven public repositories were missing from Key
 Projects entirely.
+
+## Keeping LinkedIn in step
+
+There is no two-way sync to build: LinkedIn has no API for writing profile data,
+and automating the browser breaks its user agreement. Reading the full profile
+is equally unavailable. The one legitimate channel is the official export —
+Settings → Data privacy → Get a copy of your data.
+
+So `check_linkedin.py` is a watchdog, not a sync. It reports what has drifted;
+you fix it, here or there.
+
+```sh
+python3 check_linkedin.py ~/Downloads/Basic_LinkedInDataExport_*.zip
+```
+
+It reads only the profile files in the archive. The export also contains
+connections, messages and phone numbers — do not commit it.
