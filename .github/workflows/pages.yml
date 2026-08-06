@@ -31,3 +31,7 @@ jobs:
           path: .
       - id: deploy
         uses: actions/deploy-pages@v4
+        with:
+          # дефолтные 10 минут короче, чем очередь публикации Pages бывает:
+          # по таймауту action отменяет свой же деплой, и правка не доезжает
+          timeout: 1800000
