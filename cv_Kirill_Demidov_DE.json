@@ -592,11 +592,11 @@
     ],
     "awards": [
         {
-            "title": "Patent: Data acquisition and processing platform for IIoT",
+            "title": "Patent: Data acquisition and processing platform for internet of things analysis and control",
             "date": "2020-11-17",
             "awarder": "USPTO (US 10,838,836)",
             "summary": "Designed a scalable IIoT routing and ingestion backbone for industrial control systems.",
-            "url": "https://patents.google.com/patent/US10838836B2"
+            "url": "https://patents.google.com/patent/US10838836B1/en"
         }
     ],
     "meta": {
