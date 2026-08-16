@@ -8,9 +8,14 @@ This repository contains my professional resume in JSON format, following the [J
 
 ## Files
 
-- `cv_Kirill_Demidov_DE.json` - Resume data in JSON Resume format
-- `resume.html` - Styled HTML presentation of the resume
-- `index.css` - Styling for the resume presentation
+- `cv_Kirill_Demidov_DE.json` - Resume data in JSON Resume format (source of truth)
+- `index.html` - Generated web page (built by `build.py`, never edit by hand)
+- `index.css` - Styling, including the print rules that keep the PDF at two pages
+- `build.py` - Renders `index.html` from the JSON
+- `build-ats.py` - Renders `cv-ats.html` and `Kirill_Demidov_CV_ATS.txt` (single-column, parser-safe)
+- `build-pdf.sh` - Runs both builders, then prints both PDFs via headless Chrome
+- `Kirill_Demidov_CV.pdf` - Designed two-column CV for people
+- `Kirill_Demidov_CV_ATS.pdf` / `.txt` - Single-column versions for ATS portals
 
 ## Features
 
@@ -49,7 +54,7 @@ The resume follows the standard JSON Resume schema which includes:
 
 ## About the Person
 
-**Kirill Demidov** - Data Engineer Team Lead with expertise in BI, analytics, and large-scale data systems. Proficient in cloud data platforms, pipeline orchestration, and leading engineering teams to build scalable data solutions.
+**Kirill Demidov** - Data Engineering Lead owning both sides of the platform: the product metrics decisions run on, and the cloud bill that produces them. Cut BigQuery spend by 50% and runs FinOps as a standing discipline. 18 years in BI and data platforms, the last 6 leading teams in mobile gaming and adtech on GCP.
 
 ## Contact
 
@@ -76,7 +81,12 @@ schema). Change it, then rebuild:
 ```sh
 python3 build.py            # regenerate index.html
 python3 build.py --check    # fail if index.html is out of date
+./build-pdf.sh              # regenerate every artifact: html, txt, both PDFs
 ```
+
+Two-column layouts get scrambled by most applicant tracking systems, so the ATS
+build is a separate single-column render rather than a restyle of the same
+markup: headings, paragraphs and lists only, no grid, no tags, no emoji.
 
 The GitHub Actions workflow rebuilds before publishing, so the live page always
 matches the JSON even if a stale `index.html` is committed. This replaced a

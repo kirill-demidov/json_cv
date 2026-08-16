@@ -18,6 +18,9 @@ from datetime import date
 
 CV = "cv_Kirill_Demidov_DE.json"
 OUT = "index.html"
+PDF = "Kirill_Demidov_CV.pdf"
+PDF_ATS = "Kirill_Demidov_CV_ATS.pdf"
+TXT_ATS = "Kirill_Demidov_CV_ATS.txt"
 RECENT = 3          # столько последних позиций показываем раскрытыми
 COLLAPSED_HL = 1    # у свёрнутых — по одному пункту, иначе блок разрастается
 
@@ -124,13 +127,20 @@ def render(d):
     b = d["basics"]
     by_net = {p["network"]: p for p in b.get("profiles", [])}
 
-    contact = [f'<li>📧 <a href="mailto:{e(b["email"])}">{e(b["email"])}</a></li>']
+    # текстовые лейблы вместо эмодзи: часть PDF-парсеров рисует их кракозябрами,
+    # а сам адрес виден и на распечатке, где по ссылке не кликнешь
+    def row(label, value):
+        return f'<li><span class="contact-label">{label}</span> {value}</li>'
+
+    contact = [row("Email", f'<a href="mailto:{e(b["email"])}">{e(b["email"])}</a>')]
     if b.get("phone"):
-        contact.append(f'<li>📱 <a href="tel:{e(b["phone"])}">{e(phone(b["phone"]))}</a></li>')
-    contact.append(f'<li>📍 {e(b["location"]["address"])}</li>')
-    for net, icon in (("LinkedIn", "🌐"), ("GitHub", "💻")):
+        contact.append(row("Phone", f'<a href="tel:{e(b["phone"])}">{e(phone(b["phone"]))}</a>'))
+    contact.append(row("Location", e(b["location"]["address"])))
+    for net in ("LinkedIn", "GitHub"):
         if net in by_net:
-            contact.append(f'<li>{icon} <a href="{e(by_net[net]["url"])}">{net} Profile</a></li>')
+            url = by_net[net]["url"]
+            shown = re.sub(r"^https?://(www\.)?", "", url).rstrip("/")
+            contact.append(row(net, f'<a href="{e(url)}">{e(shown)}</a>'))
 
     skills = "\n".join(
         f'          <div class="skill-category">\n'
@@ -214,9 +224,10 @@ def render(d):
                  for l in d.get("languages", []))
 
     older_block = (f'''
-        <details style="margin-top: 1rem; color: var(--text-muted); cursor: pointer;">
+        <details id="early-career" class="early-career">
           <summary>View work experience ({older_years})</summary>
-          <div class="experience-list" style="margin-top: 1rem;">
+          <h3 class="early-career-title">Earlier experience ({older_years})</h3>
+          <div class="experience-list">
 {older}
           </div>
         </details>''' if older else "")
@@ -251,6 +262,12 @@ def render(d):
         <ul class="contact-info">
           {chr(10).join("  " + c for c in contact).strip()}
         </ul>
+        <div class="downloads">
+          <a class="download-btn" href="{PDF}" download>⬇︎ Download PDF</a>
+          <a class="download-link" href="{PDF_ATS}" download>ATS PDF</a>
+          <a class="download-link" href="{TXT_ATS}" download>TXT</a>
+          <a class="download-link" href="{CV}" download>JSON</a>
+        </div>
       </section>
 
       <section id="skills-overview">
@@ -319,6 +336,13 @@ def render(d):
       const durationEl = el.querySelector('.duration');
       if (start && end && durationEl) durationEl.textContent = calculateDuration(start, end);
     }});
+
+    // в PDF свёрнутый аккордеон читается как дыра в хронологии, а стрелка — как баг
+    const earlyCareer = document.getElementById('early-career');
+    if (earlyCareer) {{
+      if (window.matchMedia('print').matches) earlyCareer.open = true;
+      window.addEventListener('beforeprint', () => {{ earlyCareer.open = true; }});
+    }}
   </script>
 </body>
 </html>

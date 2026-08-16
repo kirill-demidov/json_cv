@@ -160,6 +160,52 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+/* Holding company grouping: one employer, several roles */
+.experience-group {
+  margin-bottom: var(--item-gap);
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.15rem;
+}
+
+.group-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.group-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.experience-group .role-item {
+  border-left: 2px solid rgba(128, 128, 128, 0.35);
+  padding-left: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.experience-group .role-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-group .role-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+
 .highlights {
   list-style-position: outside;
   padding-left: 1.2rem;
@@ -197,11 +243,149 @@ h2 {
   font-weight: 500;
 }
 
-/* Print Optimization */
+.contact-label {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Earlier career: collapsed on the web, always expanded in print */
+.early-career {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.early-career-title {
+  display: none;
+}
+
+/* Downloads */
+.downloads {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  filter: brightness(1.1);
+}
+
+.download-link {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Print Optimization — target: 2 pages */
+@page {
+  size: A4;
+  margin: 9mm 10mm;
+}
+
 @media print {
-  body { padding: 0; }
-  .container { display: block; }
-  aside { position: static; margin-bottom: 2rem; }
-  .profile-img { display: none; }
-  .tag { border: 1px solid #ccc; background: none; }
+  :root {
+    --section-gap: 0.85rem;
+    --item-gap: 0.5rem;
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --text-muted: #555555;
+    --accent-color: #0055aa;
+    --sidebar-bg: #ffffff;
+  }
+
+  body {
+    padding: 0;
+    font-size: 8.6pt;
+    line-height: 1.3;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Keep the two-column layout: a full-width sidebar wastes a third of the page */
+  .container {
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    gap: 1.1rem;
+    max-width: none;
+  }
+
+  aside { position: static; }
+  /* Projects live on the web version only — the PDF stays at two pages */
+  .profile-img, .downloads, #projects { display: none; }
+
+  h1 { font-size: 15pt; line-height: 1.15; }
+  .label { font-size: 8.8pt; line-height: 1.25; }
+  .summary-text { font-size: 7.8pt !important; margin-bottom: 0.7rem !important; }
+
+  h2 {
+    font-size: 9.5pt;
+    padding-bottom: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  section { margin-bottom: var(--section-gap); }
+
+  .item-header h3, .group-header h3 { font-size: 9.4pt; }
+  .experience-group .role-item h4 { font-size: 8.8pt; }
+  .date-range { font-size: 7.6pt; }
+  .company-name, .project-entity { margin-bottom: 0.2rem; }
+  .group-meta { font-size: 7.6pt; margin-bottom: 0.4rem; }
+  .summary { font-size: 8.2pt; margin-bottom: 0.2rem; }
+
+  .highlights { font-size: 8.2pt; padding-left: 0.85rem; }
+  .highlights li { margin-bottom: 0.08rem; }
+
+  .contact-info li { margin-bottom: 0.12rem; font-size: 7.8pt; }
+  .skill-category h4 { font-size: 8.2pt; }
+  .skills-stack { gap: 0.5rem !important; }
+
+  .tag {
+    border: 1px solid #ccc;
+    background: none;
+    font-size: 7pt;
+    padding: 0.05rem 0.3rem;
+    margin: 0.05rem 0.05rem 0 0;
+  }
+
+  .experience-group .role-item {
+    padding-left: 0.6rem;
+    margin-bottom: 0.55rem;
+  }
+
+  /* Never split a role or a project across pages */
+  .experience-group .role-item,
+  .experience-item,
+  .project-item { break-inside: avoid; }
+
+  a { text-decoration: none; }
+
+  .contact-label { min-width: 3.6rem; font-size: 7.2pt; }
+
+  /* An accordion arrow is meaningless on paper: show the content, drop the control */
+  .early-career { margin-top: 0; color: var(--text-color); }
+  .early-career > summary { display: none; }
+  .early-career > .experience-list { margin-top: 0 !important; }
+  .early-career-title {
+    display: block;
+    font-size: 9.4pt;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
 }

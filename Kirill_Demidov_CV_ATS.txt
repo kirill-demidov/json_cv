@@ -1,0 +1,115 @@
+KIRILL DEMIDOV
+Data Engineering Lead | FinOps, Product Metrics & AI-Native Analytics
+kirill.demidov@gmail.com | +972542332917 | Tel Aviv, Israel | github.com/kirill-demidov | linkedin.com/in/kirill-demidov-72711317
+========================================================================
+
+Data engineering lead who owns both sides of the platform: the product metrics decisions run on, and the cloud bill that produces them. Cut BigQuery spend by 50% through slot reservation redesign and per-team cost attribution, and run FinOps as a standing discipline — cost dashboards, query analyzers, and budget monitoring — not a one-off cleanup. 18 years in BI and data platforms, the last 6 leading teams in mobile gaming and adtech on GCP, now building AI-native tooling (MCP servers, agentic workflows) that keeps AI coding agents effective in a real codebase.
+
+EXPERIENCE
+------------------------------------------------------------------------
+
+Data Engineering Lead
+GOAT Entertainment Studios (HitZone Games, 1UP) | Israel
+July 2024 - Present
+Own the analytics platform across both studios of the holding — Dataform/BigQuery modelling, revenue and UA data marts, data quality, self-service BI, GCP cost ownership, and production ML for game balance.
+- Own the analytics warehouse: 254 Dataform/BigQuery models across product, finance, marketing, and monitoring, with 125 automated data-quality assertions.
+- Brought store revenue in-house — a daily Apple/Google reconciliation that matches the finance golden source to the cent, and caught a double-counting bug that had inflated reported revenue.
+- Built the UA/marketing mart — attribution, creative-level cost, cohort revenue and retention — as the single source of truth for spend decisions.
+- Built and run a self-service BI portal (Python/FastAPI on Cloud Run) serving 12 dashboards to product, finance, and UA, with pipeline observability and Slack alerting.
+- Built Hero Index and a RAPM-style ML model (Cloud Run) that replaced subjective balance votes with 15.67M real battles, lifting the PvE balance signal from 0.56 to 0.85 correlation.
+- Own GCP FinOps for the data platform — cut BigQuery spend by 50% through a slot reservation redesign (400-slot baseline vs. 700+ peak), with no loss of query performance for downstream teams.
+- Made cloud cost visible and owned: built a BigQuery cost dashboard and a query analyzer that attribute spend to teams, queries, and pipelines, turning an opaque monthly bill into per-owner accountability.
+- Led the GitLab→GitHub monorepo migration (29 repos → 3) and introduced the Service Brain Pattern — a pre-development documentation standard that keeps AI coding agents and engineers aligned on service context.
+
+Data Engineering Lead
+Arpeely | Tel Aviv, Israel
+July 2022 - July 2024
+Leading the data engineering team, building scalable data infrastructure, and developing BI solutions using Google Cloud, BigQuery, and Dataform.
+- Refactored ELT pipelines from custom Python to scalable Dataform solution.
+- Designed and implemented a corporate Data Warehouse and Data Lake in GCP.
+- Deployed Looker-based BI system from scratch.
+- Implemented CI/CD pipelines for DWH and reporting.
+- Developed a data governance monitoring system.
+
+Data Engineering Lead
+Tango.me | Tel Aviv, Israel
+July 2021 - July 2022
+Managed a team of data engineers and BI developers, implementing data pipelines and analytics solutions in GCP.
+- Led a team of 6 data engineers and BI developers.
+- Developed corporate Data Lake and Data Warehouse in GCP with Airflow and dbt.
+- Implemented data governance and data quality monitoring using SelectStar and SodaSQL.
+- Designed and built analytics and operational reports on Looker.
+
+Big Data Team Lead
+Alterosmart Solutions | Tel Aviv, Israel
+December 2019 - July 2021
+Led the Big Data team, designing and implementing data pipelines, data warehouses, and analytics solutions for industrial IoT systems.
+- Analyzed business requirements, designed, and implemented Big Data modules in PDC systems.
+- Developed and optimized ETL/ELT processes for IIoT systems (PDC, BMS) using Apache NiFi, Data Build Tool, and Spark.
+- Designed and implemented an operational Data Warehouse for PDC application data using PostgreSQL.
+- Built a Data Mart module for Atlassian Jira Software based on PostgreSQL and Cube.js.
+- Developed and visualized analytical reports for DF data processing.
+
+Senior BI Developer
+SafeCharge | Tel Aviv, Israel
+August 2018 - December 2019
+Designed and developed BI solutions, Data Marts, and reporting systems, while maintaining ETL processes for internal analytics.
+- Analyzed business requirements and designed Data Marts for internal clients.
+- Maintained an ETL platform based on SSIS.
+- Developed a semantic layer using SSAS (OLAP Cube).
+- Designed and implemented a reporting system using SSRS and Power BI.
+- Migrated OLAP-based BI system to a Big Data environment using AWS Data Lake (S3), ELT pipelines with Apache NiFi and Spark (PySpark), and MemSQL as the semantic layer.
+
+BI Project Manager / BI & Big Data Engineer
+Data Cube | Tel Aviv, Israel
+January 2014 - August 2018
+Managed BI projects and developed BI & Big Data solutions for various enterprises.
+- Managed BI projects for enterprise clients including BioCatch, Postal Bank, Panaya, and Amdocs.
+- Managed BI projects from conceptualization to full implementation.
+- Analyzed business requirements and developed project deliverables.
+- Maintained ETL platforms using SSIS, Python, and T-SQL.
+- Designed and implemented Data Marts and Data Warehouses for internal analytics systems.
+- Developed OLAP and Tabular Cube semantic layers.
+- Implemented reporting systems using Pyramid BI Office, SSRS, Necto Panorama, Power BI, and Business Objects.
+- Served major clients including BioCatch, Postal Bank of Israel, Bituach Yashir, Mimun Yashir, MKS Instruments, Taglit Birthright Israel, Panaya, Reuth Medical Rehabilitation Center, Medinol, LiderForex, and Amdocs.
+
+Head of Data Management and Data Integration Department
+Company for Location and Restitution of Holocaust Victims' Assets | Israel
+January 2008 - January 2014
+Led data management initiatives, developed data integration tools, and managed ETL and reporting systems.
+- Developed knowledge management tools using MS SQL Server 2012.
+- Designed and managed ETL processes for data integration and reporting.
+- Created, managed, and supported a SharePoint-based database system.
+- Led a team in developing research projects, providing training, and knowledge sharing.
+
+SKILLS
+------------------------------------------------------------------------
+AI-Native Data Engineering: MCP Server Architecture, Agentic Workflows, RAG Architecture, Claude Code, Multi-Agent Tooling, Vector Databases (Qdrant)
+FinOps & Cloud Cost: BigQuery Slot Reservations, Cost Attribution & Showback, Query Cost Analysis, GCP Billing Analytics, Budget Monitoring & Alerting, Capacity Planning
+Data Platform: BigQuery, Dataform, dbt, Dimensional Modelling, Data Quality & Assertions, Apache Airflow
+Analytics & BI: Product Analytics, Revenue Reconciliation, UA Attribution, Funnel & Cohort Analysis, Looker, Power BI
+Cloud & Engineering: Google Cloud Platform (GCP), Cloud Run, Python / FastAPI, SQL, Docker, CI/CD
+
+PUBLICATIONS
+------------------------------------------------------------------------
+- Merge in BigQuery and DML Limits: How to Overcome Upsert Restrictions — Medium, 2024. https://medium.com/@kirkademidov/merge-in-bigquery-and-dml-limits-how-to-overcome-upsert-restrictions-dc7507d6d997
+- Alleviating the Headaches of Data Schema Changes for Engineers — Medium, 2024. https://medium.com/@kirkademidov/alleviating-the-headaches-of-data-schema-changes-for-engineers-8d6cb5f0b946
+
+PATENTS & AWARDS
+------------------------------------------------------------------------
+- Patent: Data acquisition and processing platform for internet of things analysis and control — USPTO (US 10,838,836), 2020.
+
+EDUCATION & CERTIFICATIONS
+------------------------------------------------------------------------
+- Master Political Science, Hebrew University of Jerusalem (2012-2014)
+- Bachelor Political Science, Hebrew University of Jerusalem (2004-2008)
+- MCSE Certification Business Intelligence, John Bryce College (2013-2014)
+- Professional Certification Google BigQuery for Data and ML Engineers, Google Cloud / Coursera (2024-2024)
+- Course Hands-On Analytics Engineering, Analytics Engineering / Masthead Data (2024-2024)
+- AI Developer Certification Beyond Vibe Coding with Google Gemini, AI Developer Community (2024-2024)
+
+LANGUAGES
+------------------------------------------------------------------------
+Hebrew (Native speaker), Russian (Native speaker), English (Fluent)
+
+Generated 2026-08-16 from cv_Kirill_Demidov_DE.json
