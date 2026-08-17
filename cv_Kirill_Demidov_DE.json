@@ -32,11 +32,11 @@
       {
         "name": "GOAT Entertainment Studios (HitZone Games, 1UP)",
         "location": "Israel",
-        "description": "Gaming holding operating the HitZone Games and 1UP (Guns & Gangs) studios.",
+        "description": "Gaming holding operating two studios and their live titles: HitZone Games (Invokers, invokers.com) and 1UP, formerly Guns & Gangs (Urban Heat, urbanheat.gg).",
         "position": "Data Engineering Lead",
         "url": "https://hit.zone/",
         "startDate": "2024-07-01",
-        "summary": "Own the analytics platform across both studios of the holding — Dataform/BigQuery modelling, revenue and UA data marts, data quality, self-service BI, GCP cost ownership, and production ML for game balance.",
+        "summary": "Own the analytics platform behind both live titles of the holding — Invokers (HitZone Games) and Urban Heat (1UP): Dataform/BigQuery modelling, revenue and UA data marts, data quality, self-service BI, GCP cost ownership, and production ML for game balance.",
         "highlights": [
           "Own the analytics warehouse: 254 Dataform/BigQuery models across product, finance, marketing, and monitoring, with 125 automated data-quality assertions.",
           "Brought store revenue in-house — a daily Apple/Google reconciliation that matches the finance golden source to the cent, and caught a double-counting bug that had inflated reported revenue.",
