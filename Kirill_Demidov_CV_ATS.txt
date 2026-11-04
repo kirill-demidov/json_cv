@@ -112,4 +112,4 @@ LANGUAGES
 ------------------------------------------------------------------------
 Hebrew (Native speaker), Russian (Native speaker), English (Fluent)
 
-Generated 2026-08-17 from cv_Kirill_Demidov_DE.json
+Generated 2026-11-04 from cv_Kirill_Demidov_DE.json

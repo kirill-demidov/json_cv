@@ -210,15 +210,15 @@
         <div class="project-list">
           <div class="project-item">
             <div class="item-header">
-              <h3>SOZD Legislative Monitoring ecosystem</h3>
+              <h3>Three Readings: open parliamentary data platform</h3>
               <span class="date-range">2023 – Present</span>
             </div>
-            <div class="project-entity">Personal Project | <a href="https://sozd-chat.org">sozd-chat.org</a></div>
-            <p class="summary">Built a multi-layer ecosystem for monitoring and analyzing Russian legislative data using LLMs and semantic search.</p>
+            <div class="project-entity">Personal Project | <a href="https://threereadings.org">threereadings.org</a></div>
+            <p class="summary">Built and run a platform that collects, normalizes and analyzes legislative data from seven parliaments (Russia&#x27;s State Duma, Israel&#x27;s Knesset, Germany&#x27;s Bundestag, Sweden&#x27;s Riksdag, US Congress, US state legislatures, Spain&#x27;s Congreso) and opens it to people and AI agents.</p>
               <ul class="highlights">
-                <li>Implemented a RAG-based semantic search system over government transcripts using Qdrant and OpenAI embeddings.</li>
-                <li>Developed an LLM-powered analysis service for bills using Google Gemini (1.5 Pro/Flash).</li>
-                <li>Built a centralized RestProxy API (FastAPI) as a gateway to PostgreSQL and BigQuery.</li>
+                <li>1.8M+ bills, 1.3M+ roll-call votes, 190K amendments and 43K plenary transcripts, synced daily from official APIs and sites into per-parliament PostgreSQL schemas.</li>
+                <li>MCP server per parliament lets Claude and ChatGPT query the data directly; LLM features include bill summaries, document parsing and natural-language reports.</li>
+                <li>Per-parliament multilingual sites (Flask + React/MUI on Cloud Run) at sozd., kns., bundestag. and riksdag.threereadings.org, plus a shared knowledge base.</li>
               </ul>
           </div>
 

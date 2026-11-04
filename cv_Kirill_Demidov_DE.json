@@ -296,31 +296,33 @@
     ],
     "projects": [
       {
-        "name": "SOZD Legislative Monitoring ecosystem",
-        "description": "Built a multi-layer ecosystem for monitoring and analyzing Russian legislative data using LLMs and semantic search.",
+        "name": "Three Readings: open parliamentary data platform",
+        "description": "Built and run a platform that collects, normalizes and analyzes legislative data from seven parliaments (Russia's State Duma, Israel's Knesset, Germany's Bundestag, Sweden's Riksdag, US Congress, US state legislatures, Spain's Congreso) and opens it to people and AI agents.",
         "highlights": [
-          "Implemented a RAG-based semantic search system over government transcripts using Qdrant and OpenAI embeddings.",
-          "Developed an LLM-powered analysis service for bills using Google Gemini (1.5 Pro/Flash).",
-          "Built a centralized RestProxy API (FastAPI) as a gateway to PostgreSQL and BigQuery.",
-          "Created multiple interfaces: analytics web portal (Flask/Bootstrap) and real-time Telegram monitoring bots."
+          "1.8M+ bills, 1.3M+ roll-call votes, 190K amendments and 43K plenary transcripts, synced daily from official APIs and sites into per-parliament PostgreSQL schemas.",
+          "MCP server per parliament lets Claude and ChatGPT query the data directly; LLM features include bill summaries, document parsing and natural-language reports.",
+          "Per-parliament multilingual sites (Flask + React/MUI on Cloud Run) at sozd., kns., bundestag. and riksdag.threereadings.org, plus a shared knowledge base.",
+          "Cross-parliament comparison layer behind parliaments.compare and a seat-allocation calculator (electoral-calc.org) on ParlGov and CLEA election data.",
+          "Ops: GitHub Actions to GHCR and Docker on a VPS, Cloud Run via Workload Identity; service schedules driven from the DB; OpenAI/GCP/DigitalOcean cost monitoring and Telegram alerting."
         ],
         "keywords": [
           "Python",
-          "FastAPI",
-          "Gemini LLM",
-          "Qdrant",
-          "GCP",
+          "PostgreSQL",
+          "MCP",
+          "LLM",
+          "React",
+          "GCP Cloud Run",
           "Docker"
         ],
         "startDate": "2023-01-01",
-        "url": "https://sozd-chat.org",
+        "url": "https://threereadings.org",
         "roles": [
-          "Full Stack Developer",
           "Architect",
-          "Data Engineer"
+          "Data Engineer",
+          "Full Stack Developer"
         ],
         "entity": "Personal Project",
-        "type": "AI / Data Engineering"
+        "type": "Civic Tech / Data Platform"
       },
       {
         "name": "GCP Billing CLI Tool",
