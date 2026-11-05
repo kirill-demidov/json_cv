@@ -48,13 +48,6 @@ body {
   gap: 3rem;
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
 /* Sidebar Styling */
 aside {
   position: sticky;
@@ -297,6 +290,52 @@ h2 {
 @page {
   size: A4;
   margin: 9mm 10mm;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  aside {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --section-gap: 2rem;
+  }
+
+  body {
+    padding: 1.25rem 1rem;
+  }
+
+  .profile-img {
+    width: 88px;
+    height: 88px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .item-header,
+  .group-header,
+  .role-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+
+  main,
+  aside {
+    overflow-wrap: anywhere;
+  }
 }
 
 @media print {
