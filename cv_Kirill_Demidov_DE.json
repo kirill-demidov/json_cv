@@ -325,6 +325,59 @@
         "type": "Civic Tech / Data Platform"
       },
       {
+        "name": "kitot.org — Israel schools directory",
+        "description": "Parent-facing directory of Israeli middle and high schools: map, open days and registration windows, majors, Ministry of Education metrics, neighbourhood context and contacts — in Hebrew, Arabic, Russian and English.",
+        "highlights": [
+          "2,500+ schools across 370 cities with Ministry metrics, 700 programmes and curated open-day / registration dates; every fact carries a source URL and fetch timestamp.",
+          "Collectors and LLM extraction (Claude) turn municipal pages and PDFs into structured events and registration rules, with a human review queue before publish.",
+          "FastAPI site on Cloud Run (BigQuery + GCS), phrase search, school compare, calendar export, Telegram bot and an MCP server for AI agents."
+        ],
+        "keywords": [
+          "Python",
+          "FastAPI",
+          "BigQuery",
+          "Cloud Run",
+          "LLM",
+          "MCP",
+          "Open Data"
+        ],
+        "startDate": "2026-11-01",
+        "url": "https://kitot.org",
+        "roles": [
+          "Architect",
+          "Data Engineer",
+          "Full Stack Developer"
+        ],
+        "entity": "Personal Project",
+        "type": "Civic Tech / Data Platform"
+      },
+      {
+        "name": "Kupot Holim — Israel health funds directory",
+        "description": "Public directory of Israel’s four health funds (Clalit, Maccabi, Meuhedet, Leumit): clinics, doctors, licenses and switch rules from official sources, searchable in Hebrew, Russian and English.",
+        "highlights": [
+          "15K service points, 60K doctors and 57K licenses across 900+ cities, geocoded and linked to membership and Ministry of Health data.",
+          "Map, clinic and doctor cards, compare views and suggest search on FastAPI / Cloud Run over a BigQuery warehouse with provenance on every row.",
+          "Collectors for BTL membership, MoH services and clinic expertise, plus LLM-assisted question answering on the public site."
+        ],
+        "keywords": [
+          "Python",
+          "FastAPI",
+          "BigQuery",
+          "Cloud Run",
+          "Open Data",
+          "Geocoding"
+        ],
+        "startDate": "2026-11-01",
+        "url": "https://kupot-intel-web-nuzw4mxfrq-ew.a.run.app",
+        "roles": [
+          "Architect",
+          "Data Engineer",
+          "Full Stack Developer"
+        ],
+        "entity": "Personal Project",
+        "type": "Civic Tech / Data Platform"
+      },
+      {
         "name": "GCP Billing CLI Tool",
         "description": "Terminal-based tool for rapid analysis and optimization of GCP costs.",
         "highlights": [
